@@ -1,0 +1,172 @@
+*, *:before, *:after {
+  box-sizing: border-box; }
+
+@font-face {
+  font-family: "Fira Mono";
+  /*a name to be used later*/ }
+
+h1 {
+  font-family: "Fira Mono";
+  font-weight: 700;
+  font-size: 3em; }
+
+h2 {
+  font-family: "Fira Mono";
+  font-size: 2em; }
+
+h3 {
+  font-family: "Fira Mono";
+  font-weight: 500; }
+
+h4 {
+  font-family: "Fira Mono";
+  font-weight: 200;
+  font-size: 1.5em; }
+
+p {
+  font-family: "Fira Mono";
+  font-weight: 200;
+  font-size: 0.8em; }
+
+hr {
+  background: #ef6d70;
+  border: 0;
+  height: 2px; }
+
+strong {
+  color: white; }
+
+body {
+  background-color: #2e3137;
+  margin: 0; }
+
+section {
+  padding: 3em 5em 3em 5em; }
+
+.title {
+  color: white; }
+
+header {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2em; }
+  header #logo {
+    width: 64px;
+    height: auto; }
+  header #name {
+    text-align: center;
+    color: white;
+    padding-left: 2em; }
+
+main #introduction {
+  padding-bottom: 1em; }
+
+main #intro {
+  color: #ef6d70; }
+
+main #social {
+  padding-top: 2em;
+  margin-bottom: 2em; }
+  main #social hr {
+    display: inline-block;
+    margin-right: 1em;
+    width: 100px; }
+  main #social a {
+    color: #5e5e5e; }
+  main #social a:hover {
+    color: #ef6d70; }
+  main #social .fa {
+    padding: 0 0.3em 0 0.3em; }
+
+main #aboutme {
+  color: #919191;
+  line-height: 2.5em; }
+
+main #recent-projects {
+  background-color: #ef6d70; }
+
+main #all-projects {
+  padding-top: 1em; }
+  main #all-projects .projects {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 2em; }
+    main #all-projects .projects:after {
+      content: " ";
+      display: block;
+      clear: both; }
+    main #all-projects .projects .project {
+      width: 31.81818%;
+      float: left;
+      margin-right: 2.27273%;
+      background-color: #212121;
+      border-radius: 0.4em;
+      height: 22em; }
+      main #all-projects .projects .project .long {
+        margin: -0.15em 0;
+        width: 0%;
+        border-radius: 0.3em;
+        transition: width 0.3s; }
+      main #all-projects .projects .project .info {
+        padding: 30px 50px;
+        width: 100%;
+        height: 100%; }
+        main #all-projects .projects .project .info h4 {
+          line-height: 0.3em;
+          transition: color 0.3s linear;
+          color: white; }
+        main #all-projects .projects .project .info hr {
+          width: 20%;
+          margin: 0; }
+        main #all-projects .projects .project .info .details {
+          padding-top: 1.5em;
+          color: white; }
+          main #all-projects .projects .project .info .details .language {
+            margin: 0.1em 0;
+            background-color: #5e5e5e;
+            display: inline-block;
+            border-radius: 0.25em;
+            transition: background-color 0.3s; }
+            main #all-projects .projects .project .info .details .language p {
+              font-size: 0.6em;
+              margin: 0;
+              padding: 0.5em; }
+          main #all-projects .projects .project .info .details .summary {
+            margin-top: 1em; }
+            main #all-projects .projects .project .info .details .summary p {
+              line-height: 1.5em; }
+    main #all-projects .projects .project:hover .long {
+      width: 100%; }
+    main #all-projects .projects .project:hover .info h4 strong {
+      color: #ef6d70; }
+    main #all-projects .projects .project:hover .info .details .language {
+      background-color: #ef6d70; }
+    main #all-projects .projects .project:last-child {
+      margin-right: 0; }
+
+footer {
+  background-color: #212121;
+  height: 200px;
+  margin: 2em 0 0 0; }
+  footer hr {
+    width: 27%;
+    margin-top: 1.5em; }
+  footer p {
+    color: white; }
+  footer #footer {
+    text-align: center;
+    padding-top: 2em; }
+  footer .social {
+    padding: 1em 0;
+    margin: 0 auto;
+    width: 27%; }
+    footer .social a {
+      padding: 0 1em;
+      color: #5e5e5e; }
+    footer .social a:hover {
+      color: #ef6d70; }

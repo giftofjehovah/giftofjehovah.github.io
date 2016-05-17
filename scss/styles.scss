@@ -1,0 +1,222 @@
+@import "bower_components/susy/sass/susy";
+
+$susy: (
+  columns: 12,
+  container: 1200px,
+  math: fluid,
+  global-box-sizing: border-box,
+  );
+
+$black: #2e3137;
+$red: #ef6d70;
+$white: white;
+$lightgrey: lighten(#5e5e5e, 20%);
+$grey: #5e5e5e;
+$blackbox: lighten(#141414, 5%);
+$font: 'Fira Mono';
+
+@include border-box-sizing;
+@font-face {
+    font-family: $font; /*a name to be used later*/
+}
+
+h1 {
+  font-family: $font;
+  font-weight: 700;
+  font-size: 3em;
+}
+h2 {
+  font-family: $font;
+  font-size: 2em;
+}
+h3 {
+  font-family: $font;
+  font-weight: 500;
+}
+h4 {
+  font-family: $font;
+  font-weight: 200;
+  font-size: 1.5em;
+}
+p {
+  font-family: $font;
+  font-weight: 200;
+  font-size: 0.8em;
+}
+
+hr {
+  background: $red;
+  border: 0;
+  height: 2px;
+}
+strong {
+  color: $white;
+}
+
+body {
+  background-color: $black;
+  margin: 0;
+}
+
+section {
+  padding: 3em 5em 3em 5em;
+}
+
+.title {
+  color: $white;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  padding: 2em;
+  #logo{
+    width: 64px;
+    height: auto;
+  }
+  #name {
+    text-align: center;
+    color: $white;
+    padding-left: 2em;
+  }
+}
+
+main {
+  #introduction {
+    padding-bottom: 1em;
+  }
+  #intro {
+    color: $red;
+  }
+
+  #social {
+    padding-top: 2em;
+    margin-bottom: 2em;
+    hr {
+      display: inline-block;
+      margin-right: 1em;
+      width: 100px;
+    }
+    a {
+      color: $grey;
+    }
+    a:hover {
+      color: $red;
+    }
+    .fa {
+      padding: 0 0.3em 0 0.3em;
+    }
+  }
+
+  #aboutme {
+    color: $lightgrey;
+    line-height: 2.5em;
+  }
+
+  #recent-projects {
+    background-color: $red;
+  }
+
+  #all-projects {
+    padding-top: 1em;
+    .projects {
+      @include container;
+      padding-top: 2em;
+      .project {
+        @include span(3 of 9);
+        background-color: $blackbox;
+        border-radius: 0.4em;
+        height: 22em;
+        .long {
+          margin: -0.15em 0;
+          width: 0%;
+          border-radius: 0.3em;
+          transition: width 0.3s;
+        }
+        .info {
+          padding: 30px 50px;
+          width: 100%;
+          height: 100%;
+          h4 {
+            line-height: 0.3em;
+            transition: color 0.3s linear;
+            color: $white;
+          }
+          hr {
+            width: 20%;
+            margin: 0;
+          }
+          .details {
+            padding-top: 1.5em;
+            color: $white;
+            .language {
+              margin: 0.1em 0;
+              background-color: $grey;
+              display: inline-block;
+              border-radius: 0.25em;
+              transition: background-color 0.3s;
+              p {
+                font-size: 0.6em;
+                margin: 0;
+                padding: 0.5em;
+              }
+            }
+            .summary {
+              margin-top: 1em;
+              p {
+                line-height: 1.5em;
+              }
+            }
+          }
+        }
+      }
+      .project:hover {
+        .long {
+          width: 100%;
+        }
+        .info {
+          h4 strong{
+            color: $red;
+          }
+          .details {
+            .language {
+              background-color: $red;
+            }
+          }
+        }
+
+      }
+      .project:last-child { margin-right: 0;}
+    }
+
+  }
+}
+
+footer {
+  background-color: $blackbox;
+  height: 200px;
+  margin: 2em 0 0 0;
+  hr {
+    width: 27%;
+    margin-top: 1.5em;
+  }
+  p {
+    color: $white;
+  }
+  #footer {
+    text-align: center;
+    padding-top: 2em;
+  }
+  .social {
+    padding: 1em 0;
+    margin: 0 auto;
+    width: 27%;
+    a {
+      padding: 0 1em;
+      color: $grey;
+    }
+    a:hover {
+      color: $red;
+    }
+  }
+}
