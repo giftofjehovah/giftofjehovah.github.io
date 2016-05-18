@@ -102,6 +102,8 @@ a {
     and (min-device-width: 768px)
     and (max-device-width: 1024px)
     and (orientation: portrait) {
+      width: 100%;
+      margin-top: 0.5em;
       background-color: $red;
   }
   margin-top: 1em;
