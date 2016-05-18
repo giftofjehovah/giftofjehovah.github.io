@@ -11,11 +11,14 @@ h1 {
   font-size: 3em; }
   @media only screen and (max-device-width: 767px) {
     h1 {
-      font-size: 1.5em; } }
+      font-size: 1.75em; } }
 
 h2 {
   font-family: "Fira Mono";
   font-size: 2em; }
+  @media only screen and (max-device-width: 767px) {
+    h2 {
+      margin: 0; } }
 
 h3 {
   font-family: "Fira Mono";
@@ -51,10 +54,40 @@ section {
   padding: 3em 5em 3em 5em; }
   @media only screen and (max-device-width: 767px) {
     section {
-      padding: 3em 1em 3em 1em; } }
+      padding: 1em 1em 0em 1em; } }
 
 .title {
   color: white; }
+
+a {
+  color: white; }
+
+.link {
+  margin-top: 1em;
+  width: 49%;
+  height: 30px;
+  background-color: #5e5e5e;
+  border-radius: 5px;
+  display: inline-block;
+  text-align: center; }
+  @media only screen and (max-device-width: 767px) {
+    .link {
+      width: 100%;
+      margin-top: 0.5em;
+      background-color: #ef6d70; } }
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+    .link {
+      background-color: #ef6d70; } }
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+    .link {
+      background-color: #ef6d70; } }
+  .link p {
+    margin: 0;
+    display: inline-block;
+    line-height: 30px; }
+
+.link:hover {
+  background-color: #ef6d70; }
 
 header {
   display: -webkit-flex;
@@ -123,9 +156,10 @@ main #all-projects {
       display: block;
       clear: both; }
     main #all-projects .projects .project {
+      position: relative;
       background-color: #212121;
       border-radius: 0.4em;
-      min-height: 22em;
+      min-height: 25em;
       height: auto; }
       @media only screen and (min-device-width: 1025px) {
         main #all-projects .projects .project {
@@ -159,7 +193,9 @@ main #all-projects {
           margin-left: 0;
           margin-right: 0; } }
       main #all-projects .projects .project .long {
-        margin: -0.15em 0;
+        margin: 0 0;
+        position: absolute;
+        bottom: 1px;
         width: 0%;
         border-radius: 0.3em;
         transition: width 0.3s; }

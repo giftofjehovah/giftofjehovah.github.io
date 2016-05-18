@@ -23,13 +23,17 @@ $font: 'Fira Mono';
 h1 {
   @media only screen
     and (max-device-width: 767px) {
-    font-size: 1.5em;
+    font-size: 1.75em;
   }
   font-family: $font;
   font-weight: 700;
   font-size: 3em;
 }
 h2 {
+  @media only screen
+    and (max-device-width: 767px) {
+      margin: 0;
+    }
   font-family: $font;
   font-size: 2em;
 }
@@ -70,13 +74,52 @@ body {
 section {
   @media only screen
     and (max-device-width: 767px) {
-    padding: 3em 1em 3em 1em;
+    padding: 1em 1em 0em 1em;
   }
   padding: 3em 5em 3em 5em;
 }
 
 .title {
   color: $white;
+}
+a {
+  color: $white;
+}
+.link {
+  @media only screen
+    and (max-device-width: 767px) {
+    width: 100%;
+    margin-top: 0.5em;
+    background-color: $red;
+  }
+  @media only screen
+    and (min-device-width: 768px)
+    and (max-device-width: 1024px)
+    and (orientation: landscape) {
+      background-color: $red;
+  }
+  @media only screen
+    and (min-device-width: 768px)
+    and (max-device-width: 1024px)
+    and (orientation: portrait) {
+      background-color: $red;
+  }
+  margin-top: 1em;
+  width: 49%;
+  height: 30px;
+  background-color: $grey;
+  border-radius: 5px;
+  display: inline-block;
+  text-align: center;
+  p {
+    margin: 0;
+    display: inline-block;
+    line-height: 30px;
+  }
+}
+
+.link:hover {
+  background-color: $red;
 }
 
 header {
@@ -152,7 +195,7 @@ main {
       @include container;
       padding-top: 2em;
       .project {
-
+        position: relative;
         @media only screen
           and (min-device-width: 1025px) {
             margin-bottom: 1.5em;
@@ -188,10 +231,12 @@ main {
           }
         background-color: $blackbox;
         border-radius: 0.4em;
-        min-height: 22em;
+        min-height: 25em;
         height: auto;
         .long {
-          margin: -0.15em 0;
+          margin: 0 0;
+          position: absolute;
+          bottom: 1px;
           width: 0%;
           border-radius: 0.3em;
           transition: width 0.3s;
@@ -250,7 +295,6 @@ main {
 
       }
     }
-
   }
 }
 
