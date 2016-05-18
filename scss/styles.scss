@@ -21,6 +21,10 @@ $font: 'Fira Mono';
 }
 
 h1 {
+  @media only screen
+    and (max-device-width: 767px) {
+    font-size: 1.5em;
+  }
   font-family: $font;
   font-weight: 700;
   font-size: 3em;
@@ -34,6 +38,11 @@ h3 {
   font-weight: 500;
 }
 h4 {
+  @media only screen
+    and (max-device-width: 767px) {
+    font-size: 1.2em;
+    line-height: 1.5em;
+  }
   font-family: $font;
   font-weight: 200;
   font-size: 1.5em;
@@ -59,6 +68,10 @@ body {
 }
 
 section {
+  @media only screen
+    and (max-device-width: 767px) {
+    padding: 3em 1em 3em 1em;
+  }
   padding: 3em 5em 3em 5em;
 }
 
@@ -67,6 +80,10 @@ section {
 }
 
 header {
+  @media only screen
+    and (max-device-width: 767px) {
+      padding: 0px;
+  }
   display: flex;
   align-items: center;
   padding: 2em;
@@ -75,6 +92,10 @@ header {
     height: auto;
   }
   #name {
+    @media only screen
+      and (max-device-width: 767px) {
+        display: none;
+      }
     text-align: center;
     color: $white;
     padding-left: 2em;
@@ -90,9 +111,17 @@ main {
   }
 
   #social {
+    @media only screen
+      and (max-device-width: 767px) {
+        padding-top: 1em;
+      }
     padding-top: 2em;
     margin-bottom: 2em;
     hr {
+      @media only screen
+        and (max-device-width: 767px) {
+          display: none;
+        }
       display: inline-block;
       margin-right: 1em;
       width: 100px;
@@ -131,6 +160,16 @@ main {
             &:nth-child(3n) {
               margin-right: 0;
             }
+          }
+          @media only screen
+            and (min-device-width: 768px)
+            and (max-device-width: 1024px)
+            and (orientation: landscape) {
+              margin-bottom: 0.8em;
+              @include span(5 of 10);
+              &:nth-child(2n) {
+                margin-right: 0;
+              }
           }
         @media only screen
           and (min-device-width: 768px)

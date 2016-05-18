@@ -9,6 +9,9 @@ h1 {
   font-family: "Fira Mono";
   font-weight: 700;
   font-size: 3em; }
+  @media only screen and (max-device-width: 767px) {
+    h1 {
+      font-size: 1.5em; } }
 
 h2 {
   font-family: "Fira Mono";
@@ -22,6 +25,10 @@ h4 {
   font-family: "Fira Mono";
   font-weight: 200;
   font-size: 1.5em; }
+  @media only screen and (max-device-width: 767px) {
+    h4 {
+      font-size: 1.2em;
+      line-height: 1.5em; } }
 
 p {
   font-family: "Fira Mono";
@@ -42,6 +49,9 @@ body {
 
 section {
   padding: 3em 5em 3em 5em; }
+  @media only screen and (max-device-width: 767px) {
+    section {
+      padding: 3em 1em 3em 1em; } }
 
 .title {
   color: white; }
@@ -54,6 +64,9 @@ header {
       -ms-flex-align: center;
           align-items: center;
   padding: 2em; }
+  @media only screen and (max-device-width: 767px) {
+    header {
+      padding: 0px; } }
   header #logo {
     width: 64px;
     height: auto; }
@@ -61,6 +74,9 @@ header {
     text-align: center;
     color: white;
     padding-left: 2em; }
+    @media only screen and (max-device-width: 767px) {
+      header #name {
+        display: none; } }
 
 main #introduction {
   padding-bottom: 1em; }
@@ -71,10 +87,16 @@ main #intro {
 main #social {
   padding-top: 2em;
   margin-bottom: 2em; }
+  @media only screen and (max-device-width: 767px) {
+    main #social {
+      padding-top: 1em; } }
   main #social hr {
     display: inline-block;
     margin-right: 1em;
     width: 100px; }
+    @media only screen and (max-device-width: 767px) {
+      main #social hr {
+        display: none; } }
   main #social a {
     color: #5e5e5e; }
   main #social a:hover {
@@ -112,6 +134,14 @@ main #all-projects {
           float: left;
           margin-right: 2.27273%; }
           main #all-projects .projects .project:nth-child(3n) {
+            margin-right: 0; } }
+      @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+        main #all-projects .projects .project {
+          margin-bottom: 0.8em;
+          width: 48.97959%;
+          float: left;
+          margin-right: 2.04082%; }
+          main #all-projects .projects .project:nth-child(2n) {
             margin-right: 0; } }
       @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
         main #all-projects .projects .project {
