@@ -9,14 +9,14 @@ h1 {
   font-family: "Fira Mono";
   font-weight: 700;
   font-size: 3em; }
-  @media only screen and (max-device-width: 767px) {
+  @media only screen and (max-width: 767px) {
     h1 {
       font-size: 1.75em; } }
 
 h2 {
   font-family: "Fira Mono";
   font-size: 2em; }
-  @media only screen and (max-device-width: 767px) {
+  @media only screen and (max-width: 767px) {
     h2 {
       margin: 0; } }
 
@@ -28,7 +28,7 @@ h4 {
   font-family: "Fira Mono";
   font-weight: 200;
   font-size: 1.5em; }
-  @media only screen and (max-device-width: 767px) {
+  @media only screen and (max-width: 767px) {
     h4 {
       font-size: 1.2em;
       line-height: 1.5em; } }
@@ -52,7 +52,7 @@ body {
 
 section {
   padding: 3em 5em 3em 5em; }
-  @media only screen and (max-device-width: 767px) {
+  @media only screen and (max-width: 767px) {
     section {
       padding: 1em 1em 0em 1em; } }
 
@@ -70,15 +70,15 @@ a {
   border-radius: 5px;
   display: inline-block;
   text-align: center; }
-  @media only screen and (max-device-width: 767px) {
+  @media only screen and (max-width: 767px) {
     .link {
       width: 100%;
       margin-top: 0.5em;
       background-color: #ef6d70; } }
-  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     .link {
       background-color: #ef6d70; } }
-  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
     .link {
       width: 100%;
       margin-top: 0.5em;
@@ -99,7 +99,7 @@ header {
       -ms-flex-align: center;
           align-items: center;
   padding: 2em; }
-  @media only screen and (max-device-width: 767px) {
+  @media only screen and (max-width: 767px) {
     header {
       padding: 0px; } }
   header #logo {
@@ -109,7 +109,7 @@ header {
     text-align: center;
     color: white;
     padding-left: 2em; }
-    @media only screen and (max-device-width: 767px) {
+    @media only screen and (max-width: 767px) {
       header #name {
         display: none; } }
 
@@ -122,14 +122,14 @@ main #intro {
 main #social {
   padding-top: 2em;
   margin-bottom: 2em; }
-  @media only screen and (max-device-width: 767px) {
+  @media only screen and (max-width: 767px) {
     main #social {
       padding-top: 1em; } }
   main #social hr {
     display: inline-block;
     margin-right: 1em;
     width: 100px; }
-    @media only screen and (max-device-width: 767px) {
+    @media only screen and (max-width: 767px) {
       main #social hr {
         display: none; } }
   main #social a {
@@ -163,7 +163,7 @@ main #all-projects {
       border-radius: 0.4em;
       min-height: 25em;
       height: auto; }
-      @media screen and (min-device-width: 1025px) {
+      @media screen and (min-width: 1025px) {
         main #all-projects .projects .project {
           margin-bottom: 1.5em;
           width: 31.81818%;
@@ -171,7 +171,7 @@ main #all-projects {
           margin-right: 2.27273%; }
           main #all-projects .projects .project:nth-child(3n) {
             margin-right: 0; } }
-      @media screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+      @media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
         main #all-projects .projects .project {
           margin-bottom: 0.8em;
           width: 48.97959%;
@@ -187,7 +187,7 @@ main #all-projects {
           margin-right: 2.04082%; }
           main #all-projects .projects .project:nth-child(2n) {
             margin-right: 0; } }
-      @media screen and (max-device-width: 767px) {
+      @media screen and (max-width: 767px) {
         main #all-projects .projects .project {
           margin-bottom: 0.8em;
           width: 100%;
