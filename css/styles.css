@@ -163,7 +163,7 @@ main #all-projects {
       border-radius: 0.4em;
       min-height: 25em;
       height: auto; }
-      @media only screen and (min-device-width: 1025px) {
+      @media screen and (min-device-width: 1025px) {
         main #all-projects .projects .project {
           margin-bottom: 1.5em;
           width: 31.81818%;
@@ -171,7 +171,7 @@ main #all-projects {
           margin-right: 2.27273%; }
           main #all-projects .projects .project:nth-child(3n) {
             margin-right: 0; } }
-      @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+      @media screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
         main #all-projects .projects .project {
           margin-bottom: 0.8em;
           width: 48.97959%;
@@ -179,7 +179,7 @@ main #all-projects {
           margin-right: 2.04082%; }
           main #all-projects .projects .project:nth-child(2n) {
             margin-right: 0; } }
-      @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+      @media screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
         main #all-projects .projects .project {
           margin-bottom: 0.8em;
           width: 48.97959%;
@@ -187,7 +187,7 @@ main #all-projects {
           margin-right: 2.04082%; }
           main #all-projects .projects .project:nth-child(2n) {
             margin-right: 0; } }
-      @media only screen and (max-device-width: 767px) {
+      @media screen and (max-device-width: 767px) {
         main #all-projects .projects .project {
           margin-bottom: 0.8em;
           width: 100%;

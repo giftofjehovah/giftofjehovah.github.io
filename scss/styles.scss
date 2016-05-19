@@ -198,7 +198,7 @@ main {
       padding-top: 2em;
       .project {
         position: relative;
-        @media only screen
+        @media screen
           and (min-device-width: 1025px) {
             margin-bottom: 1.5em;
             @include span(3 of 9);
@@ -206,7 +206,7 @@ main {
               margin-right: 0;
             }
           }
-          @media only screen
+          @media screen
             and (min-device-width: 768px)
             and (max-device-width: 1024px)
             and (orientation: landscape) {
@@ -216,7 +216,7 @@ main {
                 margin-right: 0;
               }
           }
-        @media only screen
+        @media screen
           and (min-device-width: 768px)
           and (max-device-width: 1024px)
           and (orientation: portrait) {
@@ -226,7 +226,7 @@ main {
               margin-right: 0;
             }
         }
-        @media only screen
+        @media screen
           and (max-device-width: 767px) {
             margin-bottom: 0.8em;
             @include span(12 of 12);
