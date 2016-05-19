@@ -217,8 +217,8 @@ main {
               }
           }
         @media screen
-          and (min-device-width: 768px)
-          and (max-device-width: 1024px)
+          and (min-width: 768px)
+          and (max-width: 1024px)
           and (orientation: portrait) {
             margin-bottom: 0.8em;
             @include span(5 of 10);
